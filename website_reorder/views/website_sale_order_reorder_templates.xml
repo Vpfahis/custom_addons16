@@ -4,7 +4,6 @@
         <xpath expr="//th[last()]" position="after">
             <th class="text-end">Reorder</th>
         </xpath>
-
         <xpath expr="//td[last()]" position="after">
             <td class="text-end">
                 <a t-att-href="'/shop/reorder/%s' % order.id"
