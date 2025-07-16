@@ -9,6 +9,7 @@
     """,
     # data files always loaded at installation
     'data': [
+        'views/website_sale_order_reorder_templates.xml',
 
     ],
     'installable': True,

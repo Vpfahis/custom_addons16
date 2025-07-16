@@ -1,0 +1,29 @@
+<odoo>
+    <!-- Reorder button in portal order list -->
+    <template id="reorder_button_list" inherit_id="sale.portal_my_orders">
+        <xpath expr="//th[last()]" position="after">
+            <th class="text-end">Reorder</th>
+        </xpath>
+
+        <xpath expr="//td[last()]" position="after">
+            <td class="text-end">
+                <a t-att-href="'/shop/reorder/%s' % order.id"
+                   class="btn btn-sm btn-outline-dark"
+                   title="Reorder">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+            </td>
+        </xpath>
+    </template>
+
+<!--    &lt;!&ndash; Reorder button in portal order detail &ndash;&gt;-->
+<!--    <template id="reorder_button_detail" inherit_id="sale.portal_my_order">-->
+<!--        <xpath expr="//div[@id='wrap']//div[contains(@class, 'oe_structure')][1]" position="after">-->
+<!--            <div class="d-flex justify-content-end my-2">-->
+<!--                <a t-att-href="'/shop/reorder/%s' % order.id" class="btn btn-primary">-->
+<!--                    Reorder-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>
