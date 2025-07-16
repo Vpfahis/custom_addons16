@@ -18,13 +18,12 @@
 
     <!-- Reorder button in portal order detail -->
     <template id="reorder_button_detail" inherit_id="sale.sale_order_portal_content">
-        <xpath expr="//div[@id='introduction']" position="inside">
-            <div class="text-end mb-3">
-                <a t-att-href="'/shop/reorder/%s' % sale_order.id"
-                   class="btn btn-primary">
-                    <i class="fa fa-shopping-cart me-2"></i>Reorder
-                </a>
-            </div>
+        <xpath expr="//div[@id='introduction']//h2" position="after">
+            <a t-att-href="'/shop/reorder/%s' % sale_order.id"
+               class="btn btn-primary"
+               style="float: right; margin-top: -40px;">
+                <i class="fa fa-shopping-cart me-2"></i>Reorder
+            </a>
         </xpath>
     </template>
 </odoo>
