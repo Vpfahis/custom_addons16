@@ -4,6 +4,7 @@
     'depends': ['website_sale', 'sale', 'portal'],
     'author': "Fahis",
     'category': 'My Category',
+    'summary': 'Reorder from previous sales',
     'description': """
     A module to reorder in website from the users saleorder history.
     """,
