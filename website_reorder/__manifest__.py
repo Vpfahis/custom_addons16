@@ -1,7 +1,7 @@
 {
     'name': "Website Reordering",
     'version': '16.0.1.0.0',
-    'depends': ['base','web','website'],
+    'depends': ['website_sale', 'sale', 'portal'],
     'author': "Fahis",
     'category': 'My Category',
     'description': """
