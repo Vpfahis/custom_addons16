@@ -7,10 +7,8 @@
     'description': """
     A module to reorder in website from the users saleorder history.
     """,
-    # data files always loaded at installation
     'data': [
         'views/website_sale_order_reorder_templates.xml',
-
     ],
     'installable': True,
     'auto_install': False,
