@@ -16,14 +16,15 @@
         </xpath>
     </template>
 
-<!--    &lt;!&ndash; Reorder button in portal order detail &ndash;&gt;-->
-<!--    <template id="reorder_button_detail" inherit_id="sale.portal_my_order">-->
-<!--        <xpath expr="//div[@id='wrap']//div[contains(@class, 'oe_structure')][1]" position="after">-->
-<!--            <div class="d-flex justify-content-end my-2">-->
-<!--                <a t-att-href="'/shop/reorder/%s' % order.id" class="btn btn-primary">-->
-<!--                    Reorder-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </xpath>-->
-<!--    </template>-->
+    <!-- Reorder button in portal order detail -->
+    <template id="reorder_button_detail" inherit_id="sale.sale_order_portal_content">
+        <xpath expr="//div[@id='introduction']" position="inside">
+            <div class="text-end mb-3">
+                <a t-att-href="'/shop/reorder/%s' % sale_order.id"
+                   class="btn btn-primary">
+                    <i class="fa fa-shopping-cart me-2"></i>Reorder
+                </a>
+            </div>
+        </xpath>
+    </template>
 </odoo>
