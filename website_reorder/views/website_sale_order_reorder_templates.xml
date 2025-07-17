@@ -13,6 +13,7 @@
             </td>
         </xpath>
     </template>
+
     <template id="reorder_button_detail" inherit_id="sale.sale_order_portal_content">
         <xpath expr="//div[@id='introduction']//h2" position="after">
             <t t-if="sale_order.state == 'sale'">
