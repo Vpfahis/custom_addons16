@@ -6,8 +6,8 @@
         <xpath expr="//td[last()]" position="after">
             <td class="text-end">
                 <a t-att-href="'/shop/reorder/%s' % order.id"
-                   class="btn btn-sm btn-outline-dark"
-                   title="Reorder">
+                   class="btn btn-sm btn-primary"
+                   title="Re-order">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                 </a>
             </td>
@@ -18,9 +18,9 @@
         <xpath expr="//div[@id='introduction']//h2" position="after">
             <t t-if="sale_order.state == 'sale'">
                 <a t-att-href="'/shop/reorder/%s' % sale_order.id"
-                   class="btn btn-primary"
+                   class="btn btn-primary rounded-pill"
                    style="float: right; margin-top: -40px;">
-                    <i class="fa fa-repeat me-2"></i>Reorder
+                    <i class="fa fa-repeat me-2"></i>Re-order
                 </a>
             </t>
         </xpath>
