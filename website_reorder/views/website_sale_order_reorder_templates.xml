@@ -15,7 +15,7 @@
         </xpath>
     </template>
 
-    <!-- Reorder button in portal order detail  -->
+    <!-- Reorder button in portal order detail -->
     <template id="reorder_button_detail" inherit_id="sale.sale_order_portal_content">
         <xpath expr="//div[@id='introduction']//h2" position="after">
             <a t-att-href="'/shop/reorder/%s' % sale_order.id"
