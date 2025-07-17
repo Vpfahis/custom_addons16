@@ -11,7 +11,7 @@ class WebsiteSaleReorder(http.Controller):
         if not sale_order or sale_order.partner_id.id != request.env.user.partner_id.id:
             return request.redirect('/my/orders')
 
-        # Add products to current website cart
+        # Add products to current website cart.
         for line in sale_order.order_line:
             request.website.sale_get_order(force_create=True)._cart_update(
                 product_id=line.product_id.id,
