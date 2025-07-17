@@ -1,5 +1,4 @@
 <odoo>
-    <!-- Reorder button in portal order list -->
     <template id="reorder_button_list" inherit_id="sale.portal_my_orders">
         <xpath expr="//th[last()]" position="after">
             <th class="text-end">Reorder</th>
@@ -14,8 +13,6 @@
             </td>
         </xpath>
     </template>
-
-    <!-- Reorder button in portal order detail -->
     <template id="reorder_button_detail" inherit_id="sale.sale_order_portal_content">
         <xpath expr="//div[@id='introduction']//h2" position="after">
             <t t-if="sale_order.state == 'sale'">
