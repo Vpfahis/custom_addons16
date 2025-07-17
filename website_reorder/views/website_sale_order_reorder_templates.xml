@@ -21,7 +21,7 @@
             <a t-att-href="'/shop/reorder/%s' % sale_order.id"
                class="btn btn-primary"
                style="float: right; margin-top: -40px;">
-                <i class="fa fa-shopping-cart me-2"></i>Reorder
+                <i class="fa fa-repeat me-2"></i>Reorder
             </a>
         </xpath>
     </template>
