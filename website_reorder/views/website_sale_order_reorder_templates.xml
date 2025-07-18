@@ -1,7 +1,7 @@
 <odoo>
     <template id="reorder_button_list" inherit_id="sale.portal_my_orders">
         <xpath expr="//th[last()]" position="after">
-            <th class="text-end">Reorder</th>
+            <th class="text-end">Re-order</th>
         </xpath>
         <xpath expr="//td[last()]" position="after">
             <td class="text-end">
