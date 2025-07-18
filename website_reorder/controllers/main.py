@@ -8,7 +8,6 @@ class WebsiteSaleReorder(http.Controller):
     def reorder_from_sale_order(self, order_id):
         sale_order = request.env['sale.order'].sudo().browse(order_id)
 
-        # Add products to current website cart.
         for line in sale_order.order_line:
             request.website.sale_get_order(force_create=True)._cart_update(
                 product_id=line.product_id.id,
